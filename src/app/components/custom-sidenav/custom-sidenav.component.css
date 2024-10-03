@@ -1,0 +1,87 @@
+/*!* Transition for the entire host element *!*/
+/*:host {*/
+/*  transition: all 500ms ease-in-out;*/
+/*}*/
+
+/*!* Sidenav header styling *!*/
+/*.sidenav-header {*/
+/*  padding: 24px;*/
+/*  text-align: center;*/
+
+/*  > img {*/
+/*    border-radius: 100%;*/
+/*    object-fit: cover;*/
+/*    margin-bottom: 10px;*/
+/*  }*/
+
+/*  .header-text {*/
+/*    height: 3px;*/
+/*    > h2 {*/
+/*      margin: 0;*/
+/*      font-size: 1rem;*/
+/*      line-height: 1.5rem;*/
+/*    }*/
+
+/*    > p {*/
+/*      margin: 0;*/
+/*      font-size: 0.8rem; !* Fixed font size issue *!*/
+/*    }*/
+/*  }*/
+/*}*/
+
+/*  !* Hide header text *!*/
+/*.hide-header-text {*/
+/*  opacity: 0;*/
+/*  height: 0 !important;*/
+/*}*/
+
+/*  !* Menu item styling *!*/
+
+/*.menu-item {*/
+/*  border-left: 5px solid;*/
+/*  border-left-color: rgba(0, 0, 0, 0);*/
+/*}*/
+
+/*  !* Selected menu item *!*/
+
+/*.selected-menu-item {*/
+/*  border-left: 5px solid;*/
+/*  border-left-color: rgba(0,0,0,0.5);*/
+/*}*/
+
+:host * {
+  transition: all 500ms ease-in-out;
+}
+
+.sidenav-header{
+  padding-top: 24px;
+  text-align: center;
+  > img {
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+}
+
+
+.header-text{
+  height: 3rem;
+  > h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  > p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+.hide-header-text {
+  opacity: 0;
+  height: 0 !important;
+}
+.mdc-list-item:focus::before {
+  background-color: transparent !important; /* Remove background color */
+  opacity: 0 !important;  /* Remove opacity */
+}
